@@ -1,5 +1,5 @@
 <ul class="navbar-nav">
-    <li class="nav-item">
+    <li class="nav-item  {{ request()->routeIs('dashboard') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('dashboard') }}">
             <span class="nav-link-icon d-md-none d-lg-inline-block">
                 <!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -15,7 +15,7 @@
             <span class="nav-link-title"> Home </span>
         </a>
     </li>
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown {{ request()->routeIs('contact') ? 'active' : '' }}">
         <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside"
             role="button" aria-expanded="false">
             <span class="nav-link-icon d-md-none d-lg-inline-block">
@@ -35,7 +35,7 @@
             <span class="nav-link-title"> Help </span>
         </a>
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="{{ route('contact') }}">
+            <a class="dropdown-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">
                 Contact
             </a>
             <a class="dropdown-item" href="https://tabler.io/docs" target="_blank" rel="noopener">
