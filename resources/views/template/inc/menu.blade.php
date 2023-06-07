@@ -38,7 +38,7 @@
             <a class="dropdown-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">
                 Contact
             </a>
-            <a class="dropdown-item" href="https://tabler.io/docs" target="_blank" rel="noopener">
+            <a class="dropdown-item {{ request()->routeIs('contactForm') ? 'active' : '' }}" href="{{ route('contactForm') }}">
                 Documentation
             </a>
             <a class="dropdown-item" href="./changelog.html">

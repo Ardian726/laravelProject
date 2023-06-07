@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Livewire\Pages\ContactComponent;
-use App\Http\Livewire\Pages\HomeComponent;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Pages\HomeComponent;
+use App\Http\Controllers\ContactController;
+use App\Http\Livewire\Pages\ContactComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/", HomeComponent::class)->name("dashboard");
+
 Route::get("/contact", ContactComponent::class)->name("contact");
+
+Route::get("/contactForm", [ContactController::class, "contact"])->name("contactForm");

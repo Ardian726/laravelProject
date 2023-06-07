@@ -14,18 +14,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -51,18 +39,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -89,18 +65,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -127,18 +91,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -164,18 +116,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -201,18 +141,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -237,18 +165,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
@@ -274,18 +190,6 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <a href="#" class="card-btn">
-                                <!-- Download SVG icon from http://tabler-icons.io/i/mail -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
-                                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                    <path d="M3 7l9 6l9 -6" />
-                                </svg>
-                                Email
-                            </a>
                             <a href="https://www.whatsapp.com/?lang=id" class="card-btn">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/phone -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon me-2 text-muted" width="24"
