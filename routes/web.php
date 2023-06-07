@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Pages\HomeComponent;
-use App\Http\Controllers\ContactController;
 use App\Http\Livewire\Pages\ContactComponent;
+use App\Http\Livewire\Pages\ContactFormComponent;
+use App\Http\Livewire\Pages\FaqComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,8 @@ Route::get("/", HomeComponent::class)->name("dashboard");
 
 Route::get("/contact", ContactComponent::class)->name("contact");
 
-Route::get("/contactForm", [ContactController::class, "contact"])->name("contactForm");
+Route::get("/contactForm", ContactFormComponent::class)->name("contactForm");
+
+Route::get("/faq", FaqComponent::class)->name("faq");
+
+Route::post("/send-message", ContactFormComponent::class, "sendEmail")->name("contact.send");
