@@ -2,7 +2,7 @@
     <div class="card-body">
         <div class="row">
             <div class="container-xl">
-                @if (Session::has('message_sent'))
+                @if (Session::has('success'))
                     <div class="alert .alert-success" role="alert">
                         {{ Session::get('message_sent') }}
                     </div>
@@ -10,33 +10,46 @@
                 <div class="row">
                     <div>
                         <div class="card-body">
-                            <form method="POST" action="{{ route('contact.send') }}" enctype="multipart/form-data">
+                            <form wire:submit.prevent="submitForm" method="POST" action="{{ route('contact.send') }}"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="mb-3">
-                                    <label class="form-label required ms-auto">Name</label>
-                                    <input type="text" class="form-control" name="name" placeholder="Name...">
+                                    <label class="form-label required ms-auto" for="name">Name</label>
+                                    <input wire:model="name" id="name" class="form-control" name="name">
                                 </div>
+                                @error('name')
+                                    <p class="text-red alert-danger">Name is required</p>
+                                @enderror
                                 <div class="mb-3">
-                                    <label class="form-label required">Email</label>
-                                    <input type="text" class="form-control" name="email" placeholder="Email...">
+                                    <label class="form-label required" for="email">Email</label>
+                                    <input wire:model="email" id="email" type="email" class="form-control"
+                                        name="email">
                                 </div>
+                                @error('email')
+                                    <p class="text-red alert-danger">Email is required</p>
+                                @enderror
                                 <div class="mb-3">
-                                    <label class="form-label required">Phone Number</label>
-                                    <input type="number" class="form-control" name="number" placeholder="Required...">
+                                    <label class="form-label required" for="number">Phone Number</label>
+                                    <input wire:model="number" id="number" type="number" class="form-control"
+                                        name="number">
                                 </div>
+                                @error('number')
+                                    <p class="text-red alert-danger">Number is required</p>
+                                @enderror
                                 <div class="mb-3">
-                                    <label class="form-label">
+                                    <label class="form-label" for="message">
                                         Message
-                                        <span class="form-label-description">
-                                            100
-                                        </span>
                                     </label>
-                                    <textarea class="form-control" name="msg" rows="6" placeholder="Content.."></textarea>
+                                    <textarea wire:model="message" id="message" class="form-control" name="message" rows="6"></textarea>
                                 </div>
+                                @error('message')
+                                    <p class="text-red alert-danger">Message is required</p>
+                                @enderror
                                 <div class="col-6 col-sm-4 col-md-2 col-xl py-3">
-                                    <a class="btn btn-primary w-300">
+                                    {{-- <a class="btn btn-primary w-300">
                                         Submit
-                                    </a>
+                                    </a> --}}
+                                    <button class="btn btn-primary" type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>
