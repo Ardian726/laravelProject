@@ -1,5 +1,6 @@
-<ul class="navbar-nav">
-    <li class="nav-item  {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+<ul class="navbar-nav pt-lg-3">
+
+    <li class="nav-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('dashboard') }}">
             <span class="nav-link-icon d-md-none d-lg-inline-block">
                 <!-- Download SVG icon from http://tabler-icons.io/i/home -->
@@ -12,11 +13,14 @@
                     <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
                 </svg>
             </span>
-            <span class="nav-link-title"> Home </span>
+            <span class="nav-link-title">
+                Home
+            </span>
         </a>
     </li>
-    <li class="nav-item  {{ request()->routeIs('faq') ? 'active' : '' }}">
-        <a class="nav-link" href="{{ route('faq') }}">
+
+    {{-- <li class="nav-item {{ request()->routeIs('#FAQ') ? 'active' : '' }}">
+        <a class="nav-link" href="#FAQ">
             <span class="nav-link-icon d-md-none d-lg-inline-block">
                 <!-- Download SVG icon from http://tabler-icons.io/i/home -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-question"
@@ -29,33 +33,69 @@
                     <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474"></path>
                 </svg>
             </span>
-            <span class="nav-link-title"> FAQ? </span>
+            <span class="nav-link-title">
+                FAQs
+            </span>
+        </a>
+    </li> --}}
+
+    <li class="nav-item {{ request()->routeIs('contact') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('contact') }}">
+            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                    </path>
+                </svg>
+            </span>
+            <span class="nav-link-title">
+                Contact
+            </span>
         </a>
     </li>
-    <li class="nav-item dropdown {{ request()->routeIs('contact') ? 'active' : '' }}">
-        <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-            role="button" aria-expanded="false">
+
+    <li class="nav-item {{ request()->routeIs('contactForm') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('contactForm') }}">
             <span class="nav-link-icon d-md-none d-lg-inline-block">
-                <!-- Download SVG icon from http://tabler-icons.io/i/lifebuoy -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-accessible" width="24"
+                <!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notes" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z">
+                    </path>
+                    <path d="M9 7l6 0"></path>
+                    <path d="M9 11l6 0"></path>
+                    <path d="M9 15l4 0"></path>
+                </svg>
+            </span>
+            <span class="nav-link-title">
+                Form
+            </span>
+        </a>
+    </li>
+
+    <li class="nav-item {{ request()->routeIs('about') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('about') }}">
+            <span class="nav-link-icon d-md-none d-lg-inline-block">
+                <!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24"
                     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                    <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1"></path>
-                    <circle cx="12" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
                 </svg>
             </span>
-            <span class="nav-link-title"> Help </span>
+            <span class="nav-link-title">
+                ARDIAN
+            </span>
         </a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">
-                Contact
-            </a>
-            <a class="dropdown-item {{ request()->routeIs('contactForm') ? 'active' : '' }}"
-                href="{{ route('contactForm') }}">
-                Form
-            </a>
-        </div>
     </li>
+
 </ul>

@@ -1,4 +1,12 @@
 <div>
+    <div class="container-xl text-center">
+        <h1 id="Contact" style="font-weight: bold; font-size: 30px;">
+            Contact
+        </h1>
+        <div class="page-pretitle" style="font-size: 15px;">
+            Our Customer Service
+        </div>
+    </div>
     <div class="page-body">
         <div class="container-xl">
             <div class="row row-cards">
@@ -207,3 +215,4 @@
             </div>
         </div>
     </div>
+</div>

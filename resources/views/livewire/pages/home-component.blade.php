@@ -1,132 +1,204 @@
 <div>
 
-    <div class="page-wrapper">
+    {{-- Wellcome --}}
+    <div style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="container-xl empty">
+            <h1 style="font-size: 40px; font-weight: bold; line-height: 50px">
+                What's your problem?<br>Let us help
+            </h1>
+            <hr style="width: 50px; color: black;">
+            <p>
+                There are many variations of passages of Lorem Ipsum available.
+                <br>
+                but the majority have suffered alteration in some form, by injected humour,
+                <br>
+                or randomised words which don't look even slightly believable.
+            </p>
+            <div class="col-6 col-sm-4 col-md-2 col-xl py-3">
+                <a href="{{ route('contact') }}" class="btn btn-primary w-90">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                        </path>
+                    </svg>
+                    Contact CS
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {{-- Charts Users --}}
+    <div class="container-xl" style="padding-bottom: 100px;">
+        <div class="row row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <h3 class="card-title">Active users</h3>
+                            <div class="ms-auto">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Last 7 days</a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item active" href="#">Last 7 days</a>
+                                        <a class="dropdown-item" href="#">Last 30 days</a>
+                                        <a class="dropdown-item" href="#">Last 3 months</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="chart-active-users-2"></div>
+                            </div>
+                            <div class="col-md-auto">
+                                <div class="divide-y divide-y-fill">
+                                    <div class="px-3">
+                                        <div class="text-muted">
+                                            <span class="status-dot bg-primary"></span> Mobile
+                                        </div>
+                                        <div class="h2">11,425</div>
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text-muted">
+                                            <span class="status-dot bg-azure"></span> Desktop
+                                        </div>
+                                        <div class="h2">6,458</div>
+                                    </div>
+                                    <div class="px-3">
+                                        <div class="text-muted">
+                                            <span class="status-dot bg-green"></span> Tablet
+                                        </div>
+                                        <div class="h2">3,985</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- Simple Contact --}}
+    <div class="page-wrapper" style="padding-bottom: 100px;">
+        <div class="container-xl text-center empty">
+            <h1 style="font-size: 40px; font-weight: bold; line-height: 50px">
+                Simple method to contact<br>customer support
+            </h1>
+            <hr style="width: 50px; color: black;">
+            <p>
+                Simple and easy to contact the customer support.
+            </p>
+        </div>
         <!-- Page body -->
         <div class="page-body">
             <div class="container-xl">
                 <div class="row row-deck row-cards">
                     <div class="col-12">
                         <div class="row row-cards">
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-sm-6 col-lg-4">
                                 <div class="card card-sm">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <span class="bg-primary text-white avatar">
                                                     <!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                        width="24" height="24" viewBox="0 0 24 24"
-                                                        stroke-width="2" stroke="currentColor" fill="none"
-                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="icon icon-tabler icon-tabler-headset" width="24"
+                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none">
                                                         </path>
+                                                        <path d="M4 14v-3a8 8 0 1 1 16 0v3"></path>
+                                                        <path d="M18 19c0 1.657 -2.686 3 -6 3"></path>
                                                         <path
-                                                            d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2">
+                                                            d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z">
                                                         </path>
-                                                        <path d="M12 3v3m0 12v3"></path>
+                                                        <path
+                                                            d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z">
+                                                        </path>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <div class="col">
                                                 <div class="font-weight-medium">
-                                                    132 Sales
+                                                    Easy to call
                                                 </div>
                                                 <div class="text-muted">
-                                                    12 waiting payments
+                                                    Talk directly to customer support
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-sm-6 col-lg-4">
                                 <div class="card card-sm">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <span class="bg-green text-white avatar">
                                                     <!-- Download SVG icon from http://tabler-icons.io/i/shopping-cart -->
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="icon icon-tabler icon-tabler-brand-whatsapp"
                                                         width="24" height="24" viewBox="0 0 24 24"
                                                         stroke-width="2" stroke="currentColor" fill="none"
                                                         stroke-linecap="round" stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none">
                                                         </path>
-                                                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                                                        <path d="M17 17h-11v-14h-2"></path>
-                                                        <path d="M6 5l14 1l-1 7h-13"></path>
+                                                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                                                        <path
+                                                            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                                                        </path>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <div class="col">
                                                 <div class="font-weight-medium">
-                                                    78 Orders
+                                                    Whatsapp
                                                 </div>
                                                 <div class="text-muted">
-                                                    32 shipped
+                                                    Call customer support vis Whatsapp
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-3">
+                            <div class="col-sm-6 col-lg-4">
                                 <div class="card card-sm">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <span class="bg-twitter text-white avatar">
                                                     <!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                        width="24" height="24" viewBox="0 0 24 24"
-                                                        stroke-width="2" stroke="currentColor" fill="none"
-                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="icon icon-tabler icon-tabler-notes" width="24"
+                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                                        stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none">
                                                         </path>
                                                         <path
-                                                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                                                            d="M5 3m0 2a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2z">
                                                         </path>
+                                                        <path d="M9 7l6 0"></path>
+                                                        <path d="M9 11l6 0"></path>
+                                                        <path d="M9 15l4 0"></path>
                                                     </svg>
                                                 </span>
                                             </div>
                                             <div class="col">
                                                 <div class="font-weight-medium">
-                                                    623 Shares
+                                                    Send your message
                                                 </div>
                                                 <div class="text-muted">
-                                                    16 today
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="card card-sm">
-                                    <div class="card-body">
-                                        <div class="row align-items-center">
-                                            <div class="col-auto">
-                                                <span class="bg-facebook text-white avatar">
-                                                    <!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon"
-                                                        width="24" height="24" viewBox="0 0 24 24"
-                                                        stroke-width="2" stroke="currentColor" fill="none"
-                                                        stroke-linecap="round" stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none">
-                                                        </path>
-                                                        <path
-                                                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
-                                                        </path>
-                                                    </svg>
-                                                </span>
-                                            </div>
-                                            <div class="col">
-                                                <div class="font-weight-medium">
-                                                    132 Likes
-                                                </div>
-                                                <div class="text-muted">
-                                                    21 today
+                                                    Send a message via the form
                                                 </div>
                                             </div>
                                         </div>
@@ -140,360 +212,94 @@
         </div>
     </div>
 
-    <div class="page-body">
-        <div class="container-xl">
-            <div class="card">
-                <div class="card-body">
-                    <div id="table-default" class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th><button class="table-sort" data-sort="sort-name">Name</button></th>
-                                    <th><button class="table-sort" data-sort="sort-city">City</button></th>
-                                    <th><button class="table-sort" data-sort="sort-type">Type</button></th>
-                                    <th><button class="table-sort" data-sort="sort-score">Score</button></th>
-                                    <th><button class="table-sort" data-sort="sort-date">Date</button></th>
-                                    <th><button class="table-sort" data-sort="sort-quantity">Quantity</button></th>
-                                    <th><button class="table-sort" data-sort="sort-progress">Progress</button></th>
-                                </tr>
-                            </thead>
-                            <tbody class="table-tbody">
-                                <tr>
-                                    <td class="sort-name">Steel Vengeance</td>
-                                    <td class="sort-city">Cedar Point, United States</td>
-                                    <td class="sort-type">RMC Hybrid</td>
-                                    <td class="sort-score">100,0%</td>
-                                    <td class="sort-date" data-date="1628071164">August 04, 2021</td>
-                                    <td class="sort-quantity">74</td>
-                                    <td class="sort-progress" data-progress="30">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">30%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 30%" role="progressbar"
-                                                        aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="30% Complete">
-                                                        <span class="visually-hidden">30% Complete</span>
-                                                    </div>
+    {{-- FAQ --}}
+    <div id="FAQ">
+        <div class="container-xl text-center">
+            <h1 style="font-weight: bold; font-size: 30px;">
+                FAQ ?
+            </h1>
+            <div class="page-pretitle" style="font-size: 15px;">
+                FREQUENTLY ASKED QUESTIONS
+            </div>
+        </div>
+        <div class="page-body">
+            <div class="container-xl">
+                <div class="card card-lg">
+                    <div class="card-body">
+                        <div class="space-y-4">
+                            <div>
+                                <h2 class="mb-3">1. Introduction</h2>
+                                <div id="faq-1" class="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" role="tab">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq-1-1">
+                                                How to send a message?
+                                            </button>
+                                        </div>
+                                        <div id="faq-1-1" class="accordion-collapse collapse" role="tabpanel"
+                                            data-bs-parent="#faq-1">
+                                            <div class="accordion-body pt-0">
+                                                <div>
+                                                    Click <strong>Help</strong> > <strong>Form</strong>.
                                                 </div>
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Fury 325</td>
-                                    <td class="sort-city">Carowinds, United States</td>
-                                    <td class="sort-type">B&amp;M Giga, Hyper, Steel</td>
-                                    <td class="sort-score">99,3%</td>
-                                    <td class="sort-date" data-date="1546512137">January 03, 2019</td>
-                                    <td class="sort-quantity">49</td>
-                                    <td class="sort-progress" data-progress="48">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">48%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 48%" role="progressbar"
-                                                        aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="48% Complete">
-                                                        <span class="visually-hidden">48% Complete</span>
-                                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" role="tab">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq-1-2">
+                                                How to call customer service?
+                                            </button>
+                                        </div>
+                                        <div id="faq-1-2" class="accordion-collapse collapse" role="tabpanel"
+                                            data-bs-parent="#faq-1">
+                                            <div class="accordion-body pt-0">
+                                                <div>
+                                                    Click <strong>Help</strong> > <strong>Contact</strong>.
                                                 </div>
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Wildfire</td>
-                                    <td class="sort-city">Kolmården Sweden</td>
-                                    <td class="sort-type">RMC Twister, Wooden, Terrain</td>
-                                    <td class="sort-score">99,3%</td>
-                                    <td class="sort-date" data-date="1546016360">December 28, 2018</td>
-                                    <td class="sort-quantity">8</td>
-                                    <td class="sort-progress" data-progress="9">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">9%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 9%" role="progressbar"
-                                                        aria-valuenow="9" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="9% Complete">
-                                                        <span class="visually-hidden">9% Complete</span>
-                                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" role="tab">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                                data-bs-target="#faq-1-3">
+                                                What are our values?
+                                            </button>
+                                        </div>
+                                        <div id="faq-1-3" class="accordion-collapse collapse" role="tabpanel"
+                                            data-bs-parent="#faq-1">
+                                            <div class="accordion-body pt-0">
+                                                <div>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Accusantium alias dignissimos
+                                                        dolorum ea est eveniet, excepturi illum in iste
+                                                        iure maiores nemo recusandae rerum saepe sed,
+                                                        sunt totam! Explicabo, ipsa?
+                                                    </p>
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Accusantium alias dignissimos
+                                                        dolorum ea est eveniet, excepturi illum in iste
+                                                        iure maiores nemo recusandae rerum saepe sed,
+                                                        sunt totam! Explicabo, ipsa?
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Lightning Rod</td>
-                                    <td class="sort-city">Dollywood, United States</td>
-                                    <td class="sort-type">RMC Wooden</td>
-                                    <td class="sort-score">99,1%</td>
-                                    <td class="sort-date" data-date="1604704179">November 07, 2020</td>
-                                    <td class="sort-quantity">104</td>
-                                    <td class="sort-progress" data-progress="98">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">98%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 98%" role="progressbar"
-                                                        aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="98% Complete">
-                                                        <span class="visually-hidden">98% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Maverick</td>
-                                    <td class="sort-city">Cedar Point, United States</td>
-                                    <td class="sort-type">Intamin Rocket, Steel</td>
-                                    <td class="sort-score">99,1%</td>
-                                    <td class="sort-date" data-date="1637669424">November 23, 2021</td>
-                                    <td class="sort-quantity">86</td>
-                                    <td class="sort-progress" data-progress="46">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">46%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 46%" role="progressbar"
-                                                        aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="46% Complete">
-                                                        <span class="visually-hidden">46% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">El Toro</td>
-                                    <td class="sort-city">Six Flags Great Adventure, United States</td>
-                                    <td class="sort-type">Intamin Twister, Wooden</td>
-                                    <td class="sort-score">99,0%</td>
-                                    <td class="sort-date" data-date="1610586921">January 14, 2021</td>
-                                    <td class="sort-quantity">130</td>
-                                    <td class="sort-progress" data-progress="29">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">29%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 29%" role="progressbar"
-                                                        aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="29% Complete">
-                                                        <span class="visually-hidden">29% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Twisted Colossus</td>
-                                    <td class="sort-city">Six Flags Magic Mountain, United States</td>
-                                    <td class="sort-type">RMC Hybrid</td>
-                                    <td class="sort-score">98,9%</td>
-                                    <td class="sort-date" data-date="1569399536">September 25, 2019</td>
-                                    <td class="sort-quantity">30</td>
-                                    <td class="sort-progress" data-progress="57">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">57%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 57%" role="progressbar"
-                                                        aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="57% Complete">
-                                                        <span class="visually-hidden">57% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Eejanaika new</td>
-                                    <td class="sort-city">Fuji-Q Highland, Japan</td>
-                                    <td class="sort-type">S&amp;S Power 4th Dimension, Steel</td>
-                                    <td class="sort-score">98,6%</td>
-                                    <td class="sort-date" data-date="1610794724">January 16, 2021</td>
-                                    <td class="sort-quantity">162</td>
-                                    <td class="sort-progress" data-progress="91">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">91%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 91%" role="progressbar"
-                                                        aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="91% Complete">
-                                                        <span class="visually-hidden">91% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Wicked Cyclone</td>
-                                    <td class="sort-city">Six Flags New England, United States</td>
-                                    <td class="sort-type">RMC Hybrid</td>
-                                    <td class="sort-score">98,2%</td>
-                                    <td class="sort-date" data-date="1568819813">September 18, 2019</td>
-                                    <td class="sort-quantity">174</td>
-                                    <td class="sort-progress" data-progress="3">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">3%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 3%" role="progressbar"
-                                                        aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="3% Complete">
-                                                        <span class="visually-hidden">3% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Shambhala</td>
-                                    <td class="sort-city">Port Aventura, Spain</td>
-                                    <td class="sort-type">B&amp;M Hyper, Steel</td>
-                                    <td class="sort-score">98,2%</td>
-                                    <td class="sort-date" data-date="1538221867">September 29, 2018</td>
-                                    <td class="sort-quantity">111</td>
-                                    <td class="sort-progress" data-progress="24">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">24%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 24%" role="progressbar"
-                                                        aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="24% Complete">
-                                                        <span class="visually-hidden">24% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Taron</td>
-                                    <td class="sort-city">Phantasialand, Germany</td>
-                                    <td class="sort-type">Intamin Sit Down, Steel</td>
-                                    <td class="sort-score">98,2%</td>
-                                    <td class="sort-date" data-date="1592858850">June 22, 2020</td>
-                                    <td class="sort-quantity">130</td>
-                                    <td class="sort-progress" data-progress="48">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">48%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 48%" role="progressbar"
-                                                        aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="48% Complete">
-                                                        <span class="visually-hidden">48% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Expedition Ge Force</td>
-                                    <td class="sort-city">Holiday Park, Germany</td>
-                                    <td class="sort-type">Intamin Megacoaster, Steel</td>
-                                    <td class="sort-score">98,2%</td>
-                                    <td class="sort-date" data-date="1565107347">August 06, 2019</td>
-                                    <td class="sort-quantity">157</td>
-                                    <td class="sort-progress" data-progress="57">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">57%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 57%" role="progressbar"
-                                                        aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="57% Complete">
-                                                        <span class="visually-hidden">57% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Storm Chaser</td>
-                                    <td class="sort-city">Kentucky Kingdom, United States</td>
-                                    <td class="sort-type">RMC Steel</td>
-                                    <td class="sort-score">97,9%</td>
-                                    <td class="sort-date" data-date="1564805623">August 03, 2019</td>
-                                    <td class="sort-quantity">43</td>
-                                    <td class="sort-progress" data-progress="42">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">42%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 42%" role="progressbar"
-                                                        aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="42% Complete">
-                                                        <span class="visually-hidden">42% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Helix</td>
-                                    <td class="sort-city">Liseberg, Sweden</td>
-                                    <td class="sort-type">Mack Looper, Steel, Terrain</td>
-                                    <td class="sort-score">97,9%</td>
-                                    <td class="sort-date" data-date="1633500491">October 06, 2021</td>
-                                    <td class="sort-quantity">151</td>
-                                    <td class="sort-progress" data-progress="54">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">54%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 54%" role="progressbar"
-                                                        aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="54% Complete">
-                                                        <span class="visually-hidden">54% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="sort-name">Outlaw Run</td>
-                                    <td class="sort-city">Silver Dollar City, United States</td>
-                                    <td class="sort-type">RMC Hybrid</td>
-                                    <td class="sort-score">96,6%</td>
-                                    <td class="sort-date" data-date="1547084027">January 10, 2019</td>
-                                    <td class="sort-quantity">131</td>
-                                    <td class="sort-progress" data-progress="64">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-lg-auto">64%</div>
-                                            <div class="col">
-                                                <div class="progress" style="width: 5rem">
-                                                    <div class="progress-bar" style="width: 64%" role="progressbar"
-                                                        aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"
-                                                        aria-label="64% Complete">
-                                                        <span class="visually-hidden">64% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    {{-- Location --}}
 
 </div>
