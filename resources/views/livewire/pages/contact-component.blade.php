@@ -16,7 +16,6 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/000m.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Paweł Kuna</a></h3>
-                            <div class="text-muted">UI Designer</div>
                             <div class="mt-3">
                                 <span class="badge bg-purple-lt">Head of Customer Service</span>
                             </div>
@@ -41,7 +40,6 @@
                         <div class="card-body p-4 text-center">
                             <span class="avatar avatar-xl mb-3 rounded">JL</span>
                             <h3 class="m-0 mb-1"><a href="#">Jeffie Lewzey</a></h3>
-                            <div class="text-muted">Chemical Engineer</div>
                             <div class="mt-3">
                                 <span class="badge bg-green-lt">Customer Service</span>
                             </div>
@@ -67,7 +65,6 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/002m.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Mallory Hulme</a></h3>
-                            <div class="text-muted">Geologist IV</div>
                             <div class="mt-3">
                                 <span class="badge bg-green-lt">Customer Service</span>
                             </div>
@@ -93,7 +90,6 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/003m.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Dunn Slane</a></h3>
-                            <div class="text-muted">Research Nurse</div>
                             <div class="mt-3">
                                 <span class="badge bg-green-lt">Customer Service</span>
                             </div>
@@ -119,8 +115,8 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/000f.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Emmy Levet</a></h3>
-                            <div class="text-muted">VP Product Management</div>
                             <div class="mt-3">
+                                <span class="badge bg-purple-lt">Head of Customer Service</span>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -144,8 +140,8 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/001f.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Maryjo Lebarree</a></h3>
-                            <div class="text-muted">Civil Engineer</div>
                             <div class="mt-3">
+                                <span class="badge bg-green-lt">Customer Service</span>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -168,8 +164,8 @@
                         <div class="card-body p-4 text-center">
                             <span class="avatar avatar-xl mb-3 rounded">EP</span>
                             <h3 class="m-0 mb-1"><a href="#">Egan Poetz</a></h3>
-                            <div class="text-muted">Research Nurse</div>
                             <div class="mt-3">
+                                <span class="badge bg-green-lt">Customer Service</span>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -193,8 +189,8 @@
                             <span class="avatar avatar-xl mb-3 rounded"
                                 style="background-image: url(./static/avatars/002f.jpg)"></span>
                             <h3 class="m-0 mb-1"><a href="#">Kellie Skingley</a></h3>
-                            <div class="text-muted">Teacher</div>
                             <div class="mt-3">
+                                <span class="badge bg-green-lt">Customer Service</span>
                             </div>
                         </div>
                         <div class="d-flex">

@@ -9,6 +9,7 @@ use App\Http\Livewire\Pages\LoginComponent;
 use App\Http\Livewire\Pages\SignupComponent;
 use App\Http\Livewire\Pages\ContactComponent;
 use App\Http\Livewire\Pages\ContactFormComponent;
+use App\Http\Livewire\Pages\HomeAdminComponent;
 use Monolog\Handler\RotatingFileHandler;
 
 /*
@@ -34,6 +35,7 @@ Route::get("/signup", SignupComponent::class)->name("signup");
 Route::get("/login", LoginComponent::class)->name("login");
 
 Route::middleware(['auth'])->group(function () {
+    Route::get("/adminDashboard", HomeAdminComponent::class)->name("admin");
     Route::get("/dashboard", HomeComponent::class)->name("dashboard");
     Route::get("/contact", ContactComponent::class)->name("contact");
     Route::get("/contactForm", ContactFormComponent::class)->name("contactForm");
